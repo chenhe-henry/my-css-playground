@@ -1,7 +1,12 @@
 <template>
   <BaseCard>
-    <h1 class="showcase colorText">Hello, this is a gradient text!!!</h1>
-    <h2 class="title">Color Text</h2>
+    <h1 slot="showcase" class="showcase">Hello, this is a gradient text!!!</h1>
+    <h2 slot="title" class="title">Gradient Color Text</h2>
+    <div slot="description" class="description">
+      <div>Key Points:</div>
+      <li>background: linear-gradient</li>
+      <li>background-clip: text</li>
+    </div>
   </BaseCard>
 </template>
 
@@ -11,14 +16,6 @@ export default {};
 
 <style lang="scss" scoped>
 .showcase {
-  grid-column: 1/2;
-  grid-row: 1/-1;
-}
-.title {
-  grid-column: 2/-1;
-  grid-row: 1/2;
-}
-.colorText {
   font-size: 3rem;
   font-weight: bold;
   background: linear-gradient(to right, red, blue, yellow, green);
