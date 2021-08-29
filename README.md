@@ -2,6 +2,4 @@
 
 ## Live Demo
 
-```
 https://my-css-playground.netlify.app/
-```
