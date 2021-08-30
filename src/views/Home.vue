@@ -1,5 +1,5 @@
 <template>
-  <div class="home"><ColorText /><BoxShadow /></div>
+  <div class="home"><ColorText /><BoxShadow /><MovingText /><Skeleton /></div>
 </template>
 
 <script>
@@ -10,6 +10,8 @@ export default {
   components: {
     ColorText: () => import("@/components/ColorText.vue"),
     BoxShadow: () => import("@/components/BoxShadow.vue"),
+    MovingText: () => import("@/components/MovingText.vue"),
+    Skeleton: () => import("@/components/Skeleton.vue"),
   },
 };
 </script>
