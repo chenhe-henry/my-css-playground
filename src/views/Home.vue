@@ -7,6 +7,10 @@
 
 export default {
   name: "Home",
+  data() {
+    return { load: {}, current: 2, content: "fsfs" };
+  },
+  mounted: {},
   components: {
     ColorText: () => import("@/components/ColorText.vue"),
     BoxShadow: () => import("@/components/BoxShadow.vue"),
