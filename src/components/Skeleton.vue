@@ -24,8 +24,10 @@ export default {};
 <style lang="scss" scoped>
 @import "@/assets/scss/custom.scss";
 .showcase {
-  background: $colors;
-  box-shadow: 0 0 20px 10px $colors;
+  background: $white;
+  box-shadow: 0 0 20px 10px $white;
+  padding: 10px;
+  border: 1px solid black;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 2fr;

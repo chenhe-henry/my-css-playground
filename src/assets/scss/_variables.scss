@@ -1,7 +1,7 @@
 // Color
 $bg-dark: hsl(0, 0%, 20%);
 $colors: mix(skyblue, limegreen, 80%); // mix use of scss
-
+$white: #ffffff;
 @for $i from 1 through 12 {
   .col-#{$i} {
     flex: 0 0 (100% / (12 / $i));
