@@ -2,7 +2,9 @@
   <div class="home">
     <div class="title content">Hello, I'm Henry He.</div>
     <div class="text content">Welcome to my CSS playground ^_^</div>
-    <BaseButton text="Discovery More" @clicked="NavToGallery" class="btn" />
+    <div class="btn">
+      <BaseButton text="Discovery More" @clicked="NavToGallery" />
+    </div>
   </div>
 </template>
 
@@ -46,12 +48,16 @@ export default {
 }
 .text,
 .btn {
+  margin-top: 5vh;
   opacity: 0;
   transform: translateY(3rem);
-  animation: fadeInUp 2s ease $typewriterSpeed + 2s forwards;
 }
 .text {
   font-size: 1.5rem;
+  animation: fadeInUp 2s ease $typewriterSpeed + 2s forwards;
+}
+.btn {
+  animation: fadeInUp 2s ease $typewriterSpeed + 4s forwards;
 }
 .home {
   position: absolute;

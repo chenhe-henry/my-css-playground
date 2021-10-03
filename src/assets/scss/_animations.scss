@@ -25,3 +25,28 @@
     transform: translateY(0);
   }
 }
+//Slide left
+.slide-left-enter-active {
+  transition: all 1s 0.8s;
+}
+.slide-left-leave-active {
+  transition: all 0.5s;
+}
+.slide-left-enter,
+.slide-left-leave-to {
+  opacity: 0;
+  transform: translateX(-2rem);
+}
+
+//Slide right
+.slide-right-enter-active {
+  transition: all 1s 0.8s;
+}
+.slide-right-leave-active {
+  transition: all 0.5s;
+}
+.slide-right-enter,
+.slide-right-leave-to {
+  opacity: 0;
+  transform: translateX(2rem);
+}

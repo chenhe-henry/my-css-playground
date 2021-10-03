@@ -4,10 +4,23 @@
       <router-link to="/">Home</router-link> |
       <router-link to="/gallery">Gallery</router-link>
     </div> -->
-    <router-view />
+    <transition :name="transitionName">
+      <router-view />
+    </transition>
   </div>
 </template>
-
+<script>
+export default {
+  transitionName: "",
+  watch: {
+    $route(to, from) {
+      const toDepth = to.path.split("/").length;
+      const fromDepth = from.path.split("/").length;
+      this.transitionName = toDepth < fromDepth ? "slide-right" : "slide-left";
+    },
+  },
+};
+</script>
 <style lang="scss">
 @import "./assets/scss/custom.scss";
 html {
